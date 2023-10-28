@@ -5,11 +5,17 @@ public class App {
         
         Random gerador = new Random();
 
-        for (int i = 0; i < 2; i++) {
-            System.out.println(gerador.nextInt(26));
+       int valor_1 = gerador.nextInt(25);
+       int valor_2 = gerador.nextInt(25);
+       
+       System.out.println("Calcule:");
+       System.out.println(valor_1 + " + " + valor_2);
+       
+
+       int x = sc.nextInt();
+       sc close;
             
         Scanner sc = new Scanner(System.in);
-        sc close;
+        
         }
     }
-}

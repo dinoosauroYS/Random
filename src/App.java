@@ -15,7 +15,11 @@ public class App {
        int x = sc.nextInt();
 
        System.out.println("sua resposta é:" + x);
+       
+       if (x == valor_1 + valor_2) {
         
+       }
+
         sc close;
         }
     }

@@ -22,6 +22,7 @@ public class App {
        }
        else
         System.out.println("voce errou:(");
-        sc close;
+        
         }
+        
     }

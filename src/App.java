@@ -18,6 +18,7 @@ public class App {
        
        if (x == valor_1 + valor_2) {
         
+        System.out.println("voce acertou!");
        }
 
         sc close;

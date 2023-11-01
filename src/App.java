@@ -6,25 +6,15 @@ public class App {
         Random gerador = new Random();
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Selecione uma dificuldade: " + "easy, " + "medium, " + "hard");
-        String dificuldade = sc.next();
+        System.out.println("Selecione uma dificuldade: " + "1, " + "2, " + "3");
+        int dificuldade = sc.nextInt();
 
-        if (dificuldade == "easy") {
+        if (dificuldade == 1) {
             System.out.println("dificuldade escolhida: easy");
-            int nivel = 25;
-        }
-        
-        if (dificuldade == "medium") {
-            int nivel = 50;
-        }
-        if (dificuldade == "hard") {
-            int nivel = 100;
-            
-        }
-       int valor_1 = gerador.nextInt(25);
-       int valor_2 = gerador.nextInt(25);
-       
-       System.out.println("Calcule:");
+
+            int valor_1 = gerador.nextInt(25);
+            int valor_2 = gerador.nextInt(25);
+             System.out.println("Calcule:");
        System.out.println(valor_1 + " + " + valor_2);
        
        int x = sc.nextInt();
@@ -38,6 +28,51 @@ public class App {
        }
        else
         System.out.println("voce errou:(");
+        }
+        
+        if (dificuldade == 2) {
+            System.out.println("dificuldade escolhida: medium");
+
+            int valor_1 = gerador.nextInt(50);
+            int valor_2 = gerador.nextInt(50);
+             System.out.println("Calcule:");
+       System.out.println(valor_1 + " + " + valor_2);
+       
+       int x = sc.nextInt();
+
+       System.out.println("sua resposta é:" + x);
+       sc.close();
+       
+       if (x == valor_1 + valor_2) {
+        
+        System.out.println("voce acertou!");
+       }
+       else
+        System.out.println("voce errou:(");
+        }
+        if (dificuldade == 3) {
+            System.out.println("dificuldade escolhida: hard");
+
+            int valor_1 = gerador.nextInt(100);
+            int valor_2 = gerador.nextInt(100);
+             System.out.println("Calcule:");
+       System.out.println(valor_1 + " + " + valor_2);
+       
+       int x = sc.nextInt();
+
+       System.out.println("sua resposta é:" + x);
+       sc.close();
+       
+       if (x == valor_1 + valor_2) {
+        
+        System.out.println("voce acertou!");
+       }
+       else
+        System.out.println("voce errou:(");
+        }
+       
+       
+      
         
         }
         

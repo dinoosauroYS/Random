@@ -53,11 +53,11 @@ do{
         if (x == valor_1 + valor_2) {
 
             System.out.println("voce acertou!");
-            System.out.println(PontuaçãoPl);
+            System.out.println("Sua pontuação é:" + PontuaçãoPl);
         } else {
             System.out.println("voce errou:(");
             PontuaçãoPl -= 2;
-            System.out.println(PontuaçãoPl);
+            System.out.println("Sua pontuação é:" + PontuaçãoPl);
         }
     }while (true);
     

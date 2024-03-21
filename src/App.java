@@ -11,8 +11,9 @@ public class App {
         int dificuldade = sc.nextInt();
         int valor_1 = 0;
         int valor_2 = 0;
-do{
-            if (dificuldade == 1) {
+        int PontuaçãoPl = 0;
+do{ 
+           if (dificuldade == 1) {
 
             System.out.println("dificuldade escolhida: easy");
 
@@ -48,12 +49,16 @@ do{
         int x = sc.nextInt();
 
         System.out.println("sua resposta é:" + x);
-
+        PontuaçãoPl += 1;
         if (x == valor_1 + valor_2) {
 
             System.out.println("voce acertou!");
-        } else
+            System.out.println(PontuaçãoPl);
+        } else {
             System.out.println("voce errou:(");
+            PontuaçãoPl -= 2;
+            System.out.println(PontuaçãoPl);
+        }
     }while (true);
     
     
